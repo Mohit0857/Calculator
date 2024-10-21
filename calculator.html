@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="main">
+        <h3>Calculator</h3>
+        <div id="sec1">
+            <input type="text" id="display" disabled/>
+        </div>
+        <div class="button">
+            <button id="clear" class="main" onclick="clearScreen()">C</button>
+            <button id="cross" class="main" onclick="cross()"><i class="fa-regular fa-circle-xmark"></i></button>
+            <button id="percentage" class="main" onclick="insertValue('%')">%</button>
+            <button id="div" class="main" onclick="insertValue('/')">/</button>
+            <button class="main" onclick="insertValue(7)">7</button>
+            <button class="main" onclick="insertValue(8)">8</button>
+            <button class="main" onclick="insertValue(9)">9</button>
+            <button id="mul" class="main" onclick="insertValue('*')">x</button>
+            <button class="main" onclick="insertValue(4)">4</button>
+            <button class="main" onclick="insertValue(5)">5</button>
+            <button class="main" onclick="insertValue(6)">6</button>
+            <button id="sub" class="main" onclick="insertValue('-')">-</button>
+            <button class="main" onclick="insertValue(1)">1</button>
+            <button class="main" onclick="insertValue(2)">2</button>
+            <button class="main" onclick="insertValue(3)">3</button>
+            <button id="sum" class="main" onclick="insertValue('+')">+</button>
+            <button id="ac" class="main" onclick="clearScreen()">AC</button>
+            <button class="main" onclick="insertValue(0)">0</button>
+            <button class="main" onclick="insertValue('.')">.</button>
+            <button id="res" class="main" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
